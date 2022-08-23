@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>533</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(245, 121, 0);
+color: rgb(0, 0, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="msg">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>520</y>
+      <width>501</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(239, 41, 41);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>0</y>
+      <width>301</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>2777215</width>
+      <height>2777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/newPrefix/ar1.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="images.qrc">:/newPrefix/ar1.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>201</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 italic 11pt &quot;Yrsa&quot;;</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Yrsa'; font-size:11pt; font-weight:72; font-style:italic;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:24pt; font-weight:600; font-style:normal; color:#ffffff;&quot;&gt;Face Recognition Attendance System&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>-4</x>
+      <y>220</y>
+      <width>541</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/newPrefix/face.jpeg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="images.qrc">:/newPrefix/face.jpeg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>533</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAdmin_Panel">
+    <property name="title">
+     <string>Admin Panel</string>
+    </property>
+    <addaction name="action_Add_User"/>
+    <addaction name="action_Show_Info"/>
+    <addaction name="action_Train_Data"/>
+   </widget>
+   <widget class="QMenu" name="menuUser_Panel">
+    <property name="title">
+     <string>User Panel</string>
+    </property>
+    <addaction name="action_Take_Attendance"/>
+   </widget>
+   <addaction name="menuAdmin_Panel"/>
+   <addaction name="menuUser_Panel"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Add_User">
+   <property name="text">
+    <string>     Add User</string>
+   </property>
+  </action>
+  <action name="action_Show_Info">
+   <property name="text">
+    <string>     Show Info</string>
+   </property>
+  </action>
+  <action name="action_Take_Attendance">
+   <property name="text">
+    <string>   Take Attendance</string>
+   </property>
+  </action>
+  <action name="action_Train_Data">
+   <property name="text">
+    <string>     Train Data</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
